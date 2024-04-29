@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-header, main, footer{
+header, main, footer,nav{
     max-width: 640px;
     margin: 1rem auto;
     border: 1px solid #bbb;
