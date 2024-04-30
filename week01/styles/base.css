@@ -72,6 +72,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    height: 50vh;
 }
 section{
     /* padding: 1rem; */
@@ -81,6 +82,7 @@ section{
     box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
     background-color: rgb(206, 205, 205);
     border-radius: .5rem;
+    height: 30vh;
     /* padding:.25rem 0; */
 }
 .card-title{
@@ -107,7 +109,7 @@ section{
 .card ul li{
     list-style-type: none;
     font-family: 'Roboto',sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -119,4 +121,12 @@ footer p{
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    margin: auto;
+    text-align: center;
+}
+footer div{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
 }
