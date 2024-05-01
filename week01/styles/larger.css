@@ -6,5 +6,20 @@
     }
     main{
         grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    nav{
+        height: fit-content;
+        display: block;
+        padding: 0;
+    }
+    section{
+        height: fit-content;
+    }
+    nav a{
+        display: block;
+        width: 100%;
+        background-color: black;
+        margin: .1rem;
     }
 }
