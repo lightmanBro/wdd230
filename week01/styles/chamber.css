@@ -2,6 +2,17 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 header, main, footer,nav,section{
     margin: auto;
     border: 1px solid #bbb;
@@ -10,5 +21,28 @@ header, main, footer,nav,section{
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+}
+.color{
+    text-align: center;
+}
+.green{
+    padding: 1rem;
+    background-color: #1abc9c;
+}
+.carrot{
+    padding: 1rem;
+    background-color: #e67e22;
+}
+.yellow{
+    padding: 1rem;
+    background-color: #f1c40f;
+}
+.grey{
+    padding: 1rem;
+    background-color: #7f8c8d;
+}
+.typography{
+    padding: 1rem;
 }
