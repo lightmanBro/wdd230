@@ -1,25 +1,42 @@
+/* Define styles for the hamburger menu */
+.hamburger {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+}
 
-@media screen and (max-width: 500px) {
-    header{
-        background-color: black;
-        color: white;
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    header {
+        /* background-color: black;
+        color: white; */
     }
-    main{
+    main {
         grid-template-columns: 1fr;
         height: fit-content;
     }
-    nav{
+    nav {
         height: fit-content;
         display: block;
         padding: 0;
     }
-    section{
+    section {
         height: fit-content;
     }
-    nav a{
+    nav a {
         display: block;
         width: 100%;
-        background-color: black;
+        /* background-color: black; */
         margin: .1rem;
+    }
+    .hamburger {
+        display: block; /* Display the hamburger icon in mobile view */
+    }
+    nav {
+        display: none; /* Hide the main menu by default in mobile view */
+    }
+    nav.active {
+        display: block; /* Display the main menu when active */
     }
 }

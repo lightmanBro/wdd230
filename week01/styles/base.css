@@ -1,6 +1,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
+    background-color: white;
+    color: inherit;
 }
 header, main, footer,nav{
     max-width: 700px;
@@ -23,6 +25,16 @@ header .name{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+#mode{
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .25rem;
+}
+#mode:hover{
+    background-color: black;
+    height: fit-content;
     color: white;
 }
 img{
@@ -76,11 +88,11 @@ main{
 }
 section{
     /* padding: 1rem; */
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .card{
     box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
-    background-color: rgb(206, 205, 205);
+    /* background-color: rgb(206, 205, 205); */
     border-radius: .5rem;
     height: 30vh;
     /* padding:.25rem 0; */
@@ -130,3 +142,20 @@ footer div{
     font-size: 1.5rem;
     text-align: center;
 }
+
+/* @media (prefers-color-scheme: dark) {
+    .theme-a.adaptive {
+      background: #753;
+      color: #dcb;
+      outline: 5px dashed #000;
+    }
+  }
+
+
+  @media (prefers-color-scheme: light) {
+    .theme-b.adaptive {
+      background: #bcd;
+      color: #334;
+      outline: 5px dotted #000;
+    }
+  } */
