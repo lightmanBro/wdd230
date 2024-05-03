@@ -19,6 +19,9 @@ header, main, footer,nav,section{
     padding: 1rem;
 
 }
+header{
+    text-align: center;
+}
 main{
     display: grid;
     grid-template-columns: 1fr;
