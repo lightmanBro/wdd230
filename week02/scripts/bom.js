@@ -11,6 +11,7 @@ button.addEventListener('click',()=>{
         deleteButton.textContent = '✂';
         li.append(deleteButton);
         list.append(li);
+        deleteButton.ariaLabel = `delete ${input.value}`;
         deleteButton.addEventListener('click',(e)=>{
             list.removeChild(li);
             input.focus();
@@ -18,3 +19,4 @@ button.addEventListener('click',()=>{
         })
     }
 })
+
