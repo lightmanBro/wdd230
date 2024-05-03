@@ -1,62 +1,75 @@
-body{
+/* Normalize.css */
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
+    font-size: 62.5%; /* Sets 1rem to 10px */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    box-sizing: border-box; /* Ensures consistent box model */
 }
+
+.roboto-thin,
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
 .roboto-thin {
-    font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
+}
+
+.roboto-light {
     font-weight: 300;
-    font-style: normal;
-  }
-header, main, footer,nav,section{
+}
+
+/* Global styles */
+header, main, footer, nav, section {
     margin: auto;
     border: 1px solid #bbb;
     padding: 1rem;
-
 }
-/*  */
-header{
+
+header {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.links{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 1rem;
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
-.links a{
+
+.links a {
     font-size: 1rem;
     color: #515454;
     text-decoration: none;
     font-weight: 500;
 }
-.site-title{
+
+.site-title {
     font-size: 2.5rem;
     color: #515454;
 }
-.hero{
-    width: 100%;
-    height: auto;
+
+.site-title h1 {
+    font-size: inherit;
 }
-.hero img{
+
+.hero img {
     width: 100%;
+    height: auto; /* Ensures image aspect ratio is maintained */
 }
-/*  */
 
 /* Nav */
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.category{
+
+.category {
     border: .1rem solid #7f8c8d;
     border-radius: .5rem;
     padding: .5rem;
@@ -65,44 +78,53 @@ nav{
     color: #7f8c8d;
     cursor: pointer;
 }
-/*  */
-main{
+
+/* Main content */
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     font-size: 1rem;
 }
-section{
+
+section {
     max-width: 30vw;
-    min-width: auto;
     height: 30vh;
     width: auto;
     border-radius: .25rem;
     box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
-.title{
+
+.title {
     border-bottom: .25rem solid #7f8c8d;
     padding: 0 .5rem;
     text-align: center;
 }
-.color{
+
+.color {
     text-align: center;
 }
-.green{
+
+/* Color variations */
+.green,
+.carrot,
+.yellow,
+.grey,
+.typography {
     padding: 1rem;
+}
+
+.green {
     background-color: #1abc9c;
 }
-.carrot{
-    padding: 1rem;
+
+.carrot {
     background-color: #e67e22;
 }
-.yellow{
-    padding: 1rem;
+
+.yellow {
     background-color: #f1c40f;
 }
-.grey{
-    padding: 1rem;
+
+.grey {
     background-color: #7f8c8d;
-}
-.typography{
-    padding: 1rem;
 }

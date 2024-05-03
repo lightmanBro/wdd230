@@ -1,45 +1,51 @@
 /* Media query for mobile view */
 @media screen and (max-width: 768px) {
     header {
-        /* background-color: black;
-        color: white; */
         display: grid;
         grid-template-columns: 1fr;
         padding: .25rem;
     }
-    .site-title{
+
+    .site-title {
         font-size: 1.25rem;
     }
-    .links{
-        flex-wrap:wrap;
+
+    .links {
+        flex-wrap: wrap;
         gap: .25rem;
     }
+
     main {
         grid-template-columns: 1fr;
         height: auto;
     }
+
     nav {
         height: fit-content;
         display: block;
         padding: 0;
     }
+
     section {
         height: fit-content;
         width: 100%;
     }
+
     nav a {
         display: block;
         width: 100%;
-        /* background-color: black; */
         margin: .1rem;
     }
+
     .hamburger {
-        display: block; /* Display the hamburger icon in mobile view */
+        display: block;
     }
+
     nav {
-        display: none; /* Hide the main menu by default in mobile view */
+        display: none;
     }
+
     nav.active {
-        display: block; /* Display the main menu when active */
+        display: block;
     }
 }
