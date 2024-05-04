@@ -31,16 +31,26 @@
         <div class="site-title">
             <h1>Akure city Chamber of Commerce </h1>
         </div>
-        <div class="links"><a href="">Membership</a><a href="">Business directories</a><a href="">Events</a><a
-                href="">Community</a> <a href="">Business Advocacy</a><a href="">About the Chamber</a></div>
+        <!-- Add hamburger icon here -->
+        <div class="hamburger">&#9776;</div>
     </header>
+    <nav>
+        <div class="links">
+            <a href="">Membership</a>
+            <a href="">Business directories</a>
+            <a href="">Events</a>
+            <a href="">Community</a> 
+            <a href="">Business Advocacy</a>
+            <a href="">About the Chamber</a>
+        </div>
+    </nav>
     <div class="hero">
         <div class="action">
             <div class="action-title">New Here?</div>
             <button>Join Community</button>
         </div>
     </div>
-    <nav>
+    <div class="category-container">
         <div class="category">Textile</div>
         <div class="category">Agriculture</div>
         <div class="category">Finance</div>
@@ -49,15 +59,15 @@
         <div class="category">Information Technology</div>
         <div class="category">Religious</div>
         <div class="category">Government</div>
-    </nav>
+    </div>
     <main>
-        <section class="current-events">
+        <section >
             <div class="title">Events</div>
         </section>
-        <section class="weather-card">
+        <section >
             <div class="title">Weather</div>
         </section>
-        <section class="spotlights">
+        <section>
             <div class="title">Spotlights</div>
         </section>
     </main>
@@ -69,6 +79,16 @@
     <script>
         const date = new Date();
         document.querySelector('.year').innerHTML = date.getFullYear();
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+
+            // Toggle the 'active' class on click of the hamburger icon
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('active');
+                console.log(nav);
+            });
+        });
 
     </script>
 </body>
