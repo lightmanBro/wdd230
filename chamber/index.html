@@ -28,11 +28,18 @@
 
 <body>
     <header>
-        <div class="site-title"><h1>Akure city Chamber of Commerce </h1></div>
+        <div class="site-title">
+            <h1>Akure city Chamber of Commerce </h1>
+        </div>
         <div class="links"><a href="">Membership</a><a href="">Business directories</a><a href="">Events</a><a
                 href="">Community</a> <a href="">Business Advocacy</a><a href="">About the Chamber</a></div>
     </header>
-    <div class="hero"><img src="./images/istockphoto-1280325823-1024x1024.jpg" alt="images of goods"></div>
+    <div class="hero">
+        <div class="action">
+            <div class="action-title">New Here?</div>
+            <button>Join Community</button>
+        </div>
+    </div>
     <nav>
         <div class="category">Textile</div>
         <div class="category">Agriculture</div>
@@ -54,7 +61,16 @@
             <div class="title">Spotlights</div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>
+            &COPY; Omotoso David <span class="year"></span>
+        </p>
+    </footer>
+    <script>
+        const date = new Date();
+        document.querySelector('.year').innerHTML = date.getFullYear();
+
+    </script>
 </body>
 
 </html>

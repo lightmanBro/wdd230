@@ -57,11 +57,45 @@ header {
     font-size: inherit;
 }
 
-.hero img {
+.hero{
+    background: url("../images/istockphoto-1280325823-1024x1024.jpg");
+    background-size: cover;
+    background-position:center ;
     width: 100%;
-    height: auto; /* Ensures image aspect ratio is maintained */
+    height: 60vh; /* Ensures image aspect ratio is maintained */
 }
-
+.action{
+    display: grid;
+    position: absolute;
+    right:50%;
+    left:0;
+    top: 50%;
+    padding: 2rem;
+    min-width:25vw ;
+    background-color:rgba(0, 0, 0, 0.36);
+    backdrop-filter: 2rem blur;
+}
+.action-title{
+    text-align: center;
+    font-size: 1.75rem;
+    /* background-color: #1abc9c; */
+    /* padding: 1rem; */
+    color: white;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.action button{
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    align-self: flex-start;
+}
 /* Nav */
 nav {
     display: flex;
