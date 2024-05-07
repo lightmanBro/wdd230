@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive-image.css">
+    <title>Responsive images</title>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive images</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="./temple/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="./temple/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="./temple/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
