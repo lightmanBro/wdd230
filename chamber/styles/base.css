@@ -24,7 +24,7 @@ body {
 /* Global styles */
 header, main, footer, nav, section {
     margin: auto;
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
     padding: 1rem;
 }
 
@@ -33,7 +33,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+#sidebar{
+    position: absolute;
+    top: 30%;
+    bottom: auto;
+    right: 50%;
+    font-size: 1.5rem;
+    background-color: white;
+}
 .links {
     display: flex;
     align-items: center;
@@ -63,6 +70,53 @@ header {
     background-position:center ;
     width: 100%;
     height: 60vh; /* Ensures image aspect ratio is maintained */
+}
+main {
+    padding: .1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center; /* Center items horizontally */
+    
+}
+
+.content {
+    /* border: .2rem solid red; */
+    /* Optionally, you can set a width to prevent the border from collapsing */
+    width: 100%;
+    grid-area: 1/span 3;
+}
+
+.box-heading{
+    text-align: center;
+    padding: 1rem;
+}
+.big{
+    text-align: center;
+    font-size: 1.25rem;
+}
+.content-picture,.content-box{
+    min-height: 20rem;
+    min-width: 15rem;
+    margin: auto;
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
+    margin-bottom: .5rem;
+    border-radius: .25rem;
+}
+.content-picture img{
+    max-width: 50rem;
+    min-width: 100%;
+    height: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.flex .category{
+    border: .01rem solid black;
+    height: fit-content;
 }
 .action{
     display: grid;
@@ -103,6 +157,7 @@ nav {
     justify-content: space-evenly;
 }
 .category-container{
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -165,4 +220,12 @@ section {
 
 .grey {
     background-color: #7f8c8d;
+}
+
+footer{
+    text-align: center;
+
+}
+footer p{
+    font-size: 1rem;
 }
