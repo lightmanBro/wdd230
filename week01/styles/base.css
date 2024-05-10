@@ -4,12 +4,23 @@ body{
     background-color: white;
     color: inherit;
 }
-header, main, footer,nav{
+header, main, footer,nav,picture,.iframe-container,.hero{
     max-width: 700px;
     margin: auto;
-    /* border: 1px solid #bbb; */
-    /* padding: 1rem; */
-
+}
+.hero{
+    position: relative;
+}
+.temple-name{
+    position: absolute;
+    color: white;
+    padding: .25rem;
+    font-size: 1rem;
+    top: 1rem;
+    left: 1rem;
+    border-radius: .2rem;
+    border: .05rem solid white;
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 header{
     display: flex;
@@ -38,8 +49,9 @@ header .name{
     color: white;
 }
 img{
-    height: 100%;
+    height: auto;
     width: 100%;
+    display: block;
     box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 header,footer{
@@ -87,14 +99,13 @@ main{
     height: 50vh;
 }
 section{
-    /* padding: 1rem; */
-    /* background-color: #fff; */
+    height: fit-content;
 }
 .card{
     box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
     /* background-color: rgb(206, 205, 205); */
     border-radius: .5rem;
-    height: 30vh;
+    min-height:20rem ;
     /* padding:.25rem 0; */
 }
 .card-title{
@@ -128,7 +139,9 @@ section{
     justify-content: space-evenly;
     gap: .5rem;
 }
-
+li a{
+    font-size: .75rem;
+}
 footer p{
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
@@ -142,7 +155,9 @@ footer div{
     font-size: 1.5rem;
     text-align: center;
 }
-
+.location{
+    min-width: 20rem;
+}
 /* @media (prefers-color-scheme: dark) {
     .theme-a.adaptive {
       background: #753;
