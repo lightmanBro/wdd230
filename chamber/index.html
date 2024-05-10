@@ -72,11 +72,17 @@
         </section>
     </main>
     <footer>
+        <div id="location"></div>
+        <div id="lastModified">Last Modification : </div>
+        <span>Contact chamber +2348062888162</span>
         <p>
+            WDD 230
             &COPY; Omotoso David <span class="year"></span>
         </p>
+       
     </footer>
     <script>
+        document.getElementById('lastModified').textContent += document.lastModified;
         const date = new Date();
         document.querySelector('.year').innerHTML = date.getFullYear();
         document.addEventListener('DOMContentLoaded', function () {
