@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 0.85rem;
+}
+.title {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+thead th {
+  background-color: #4f4e4e;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+th {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Style the checkmark and cross */
+td {
+  font-size: 1.5em;
+}
