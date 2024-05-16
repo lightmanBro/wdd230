@@ -1,0 +1,15 @@
+body {
+	font-family: Roboto, Arial, sans-serif;
+	margin: 1rem;
+}
+
+main .form-page{
+    height: fit-content;
+
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
