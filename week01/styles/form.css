@@ -13,3 +13,45 @@ fieldset{
     flex-direction: column;
     margin: auto;
 }
+
+
+#formmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+#keyphrase:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
+
+/* input[required] ^ label::after {
+	font-size: 10px;
+	content: " *️⃣";
+} */
+
+.req::after {
+	font-size: 10px;
+	content: " *️⃣";
+}
+
+.smaller {
+	font-size: 11px;
+	position: absolute;
+	top: -10px;
+	right: 10px;
+}
+
+@keyframes shaketext {
+	25% {
+		transform: translateX(3px);
+	}
+	50% {
+		transform: translateX(-3px);
+	}
+	75% {
+		transform: translateX(3px);
+	}
+}
