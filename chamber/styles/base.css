@@ -127,8 +127,8 @@ main {
     padding: 2rem;
     min-width:25vw ;
     background-color:rgba(0, 0, 0, 0.36);
-    backdrop-filter: 2rem blur;
 }
+/* backdrop filter removed */
 .action-title{
     text-align: center;
     font-size: 1.75rem;
