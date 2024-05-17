@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/File:Akure_town.jpg">
+    <title>Akure Chamber of commerce</title>
+    <meta property="og:title" content="Akure chamber of commerce">
+    <meta property="og:type" content="website" />
+    <meta name="description" content="The Akure Chamber of Commerce acts as a regional economic catalyst, 
+    leadership convener and community champion. We promote business through member
+    services, economic and community development, and public policy that balances economic prosperity" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://lightmanbro.github.io/wdd230/chamber/">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Omotoso David Course assignment portal">
+    <meta property="og:site_name" content="WDD 230.">
+    <meta name="author" content="Omotoso David .O" />
+    <link rel="icon" href="favicon.ico" type="x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+</head>
+
+<body>
+    <header>
+        <div class="site-title">
+            <h1>Akure city Chamber of Commerce </h1>
+        </div>
+        <!-- Add hamburger icon here -->
+        <div class="hamburger">&#9776;</div>
+    </header>
+    <nav>
+        <div class="links">
+            <a href="">Membership</a>
+            <a href="">Business directories</a>
+            <a href="">Events</a>
+            <a href="">Community</a> 
+            <a href="">Business Advocacy</a>
+            <a href="">About the Chamber</a>
+        </div>
+    </nav>
+    <div class="hero">
+        
+    </div>
+    <div class="category-container">
+        <div class="category">Textile</div>
+        <div class="category">Agriculture</div>
+        <div class="category">Finance</div>
+        <div class="category">Transportation</div>
+        <div class="category">Construction</div>
+        <div class="category">Information Technology</div>
+        <div class="category">Religious</div>
+        <div class="category">Government</div>
+    </div>
+        <div class="container">
+            <h1>Membership Application Form</h1>
+            <div class="form-container">
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">First Name:
+                        <input type="text" id="first-name" name="first-name" required>
+                    </label>
+                    <label for="last-name">Last Name:
+                        <input type="text" id="last-name" name="last-name" required>
+                    </label>
+                    <label for="title-position">Title/Position:
+                        <input type="text" id="title-position" name="title-position" pattern="[A-Za-z\s-]{7,}" title="Only letters, hyphens, and spaces are allowed. Minimum 7 characters." required>
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </label>
+                    <label for="mobile-phone">Mobile Phone:
+                        <input type="tel" id="mobile-phone" name="mobile-phone" required>
+                    </label>
+                    <label for="organization-name">Business/Organization Name:
+                        <input type="text" id="organization-name" name="organization-name" required>
+                    </label>
+                    <label for="membership-level">Membership Level:
+                        <select id="membership-level" name="membership-level" required>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label for="organization-description">Business/Organization Description:
+                        <textarea id="organization-description" name="organization-description"></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <input type="submit" value="Join the Chamber">
+                </form>
+                <div class="membership-benefits">
+                    <h2>Membership Benefits</h2>
+                    <ul>
+                        <li><strong>NP Membership:</strong><br> No fee, access to all general events.</li>
+                        <li><strong>Bronze Membership:</strong><br> Includes NP benefits plus additional networking events.</li>
+                        <li><strong>Silver Membership:</strong><br> Includes Bronze benefits plus training sessions and advertising discounts.</li>
+                        <li><strong>Gold Membership:</strong><br> Includes Silver benefits plus spotlight positions on the home page and premium event discounts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+    <footer>
+        <div id="location"></div>
+        <div id="lastModified">Last Modification : </div>
+        <span>Contact chamber +2348062888162</span>
+        <p>
+            WDD 230
+            &COPY; Omotoso David <span class="year"></span>
+        </p>
+       
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent += document.lastModified;
+        const date = new Date();
+        document.querySelector('.year').innerHTML = date.getFullYear();
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+
+            // Toggle the 'active' class on click of the hamburger icon
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

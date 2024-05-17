@@ -140,8 +140,12 @@ main {
     font-style: normal;
     font-weight: 500;
 }
-.action button{
+.action a{
     border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
     font-size: 1rem;
     padding: 1rem;
     border-radius: .25rem;
@@ -149,6 +153,10 @@ main {
     font-style: normal;
     font-weight: 700;
     align-self: flex-start;
+}
+.action a:hover{
+    background-color: white;
+    color: black;
 }
 /* Nav */
 nav {
@@ -230,4 +238,135 @@ footer p{
     font-size: 1rem;
     padding: .5rem;
 }
-p:ch
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    /* margin: 20px; */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: #218838 solid 2px;
+}
+
+.form-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* font-size: 1rem; */
+    max-height: 35px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background: #218838;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background: #218838;
+}
+
+.membership-benefits {
+    margin-top: 20px;
+    height: inherit;
+    /* border: .01rem solid black; */
+}
+
+.membership-benefits h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: #218838 solid 2px;
+}
+
+.membership-benefits ul {
+    /* border: .01rem solid black; */
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.membership-benefits li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    text-justify: distribute;
+    box-shadow: 0 0 10px #1abc9c;
+    padding: .5rem;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* thankyou page */
+.thank-you{
+    font-size: 1rem;
+}
+.thank-you a{
+    text-decoration: none;
+    background-color: #218838;
+    padding: .5rem;
+    color: white;
+    border-radius: 2px;
+}
+@media (min-width: 768px) {
+    .action{
+        left: 1rem;
+        right: auto;
+        margin: auto;
+    }
+    .action a{
+        margin: auto;
+    }
+    .form-container {
+        flex-direction: row;
+    }
+
+    form {
+        flex: 2;
+    }
+
+    .membership-benefits {
+        flex: 1;
+        margin-left: 20px;
+    }
+}

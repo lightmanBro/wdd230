@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://en.wikipedia.org/wiki/File:Akure_town.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://en.wikipedia.org/wiki/File:Akure_town.jpg" />
     <title>Akure Chamber of commerce</title>
-    <meta property="og:title" content="Akure chamber of commerce">
+    <meta property="og:title" content="Akure chamber of commerce" />
     <meta property="og:type" content="website" />
-    <meta name="description" content="The Akure Chamber of Commerce acts as a regional economic catalyst, 
+    <meta
+      name="description"
+      content="The Akure Chamber of Commerce acts as a regional economic catalyst, 
     leadership convener and community champion. We promote business through member
     services, economic and community development, and public policy that balances economic prosperity" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:url" content="https://lightmanbro.github.io/wdd230/chamber/">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:url"
+      content="https://lightmanbro.github.io/wdd230/chamber/" />
     <!--  Non-Essential, But Recommended -->
-    <meta property="og:description" content="WDD 230 - Web Frontend Development Omotoso David Course assignment portal">
-    <meta property="og:site_name" content="WDD 230.">
+    <meta
+      property="og:description"
+      content="WDD 230 - Web Frontend Development Omotoso David Course assignment portal" />
+    <meta property="og:site_name" content="WDD 230." />
     <meta name="author" content="Omotoso David .O" />
-    <link rel="icon" href="favicon.ico" type="x-icon">
+    <link rel="icon" href="favicon.ico" type="x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/larger.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="site-title">
-            <h1>Akure city Chamber of Commerce </h1>
-        </div>
-        <!-- Add hamburger icon here -->
-        <div class="hamburger">&#9776;</div>
+      <div class="site-title">
+        <h1>Akure city Chamber of Commerce</h1>
+      </div>
+      <!-- Add hamburger icon here -->
+      <div class="hamburger">&#9776;</div>
     </header>
     <nav>
-        <div class="links">
-            <a href="">Membership</a>
-            <a href="">Business directories</a>
-            <a href="">Events</a>
-            <a href="">Community</a> 
-            <a href="">Business Advocacy</a>
-            <a href="">About the Chamber</a>
-        </div>
+      <div class="links">
+        <a href="./join.html">Membership</a>
+        <a href="">Business directories</a>
+        <a href="">Events</a>
+        <a href="">Community</a>
+        <a href="">Business Advocacy</a>
+        <a href="">About the Chamber</a>
+      </div>
     </nav>
     <div class="hero">
-        <div class="action">
-            <div class="action-title">New Here?</div>
-            <button>Join Community</button>
-        </div>
+      <div class="action">
+        <div class="action-title">New Here?</div>
+        <a href="./join.html">Join Community</a>
+      </div>
     </div>
     <div class="category-container">
-        <div class="category">Textile</div>
-        <div class="category">Agriculture</div>
-        <div class="category">Finance</div>
-        <div class="category">Transportation</div>
-        <div class="category">Construction</div>
-        <div class="category">Information Technology</div>
-        <div class="category">Religious</div>
-        <div class="category">Government</div>
+      <div class="category">Textile</div>
+      <div class="category">Agriculture</div>
+      <div class="category">Finance</div>
+      <div class="category">Transportation</div>
+      <div class="category">Construction</div>
+      <div class="category">Information Technology</div>
+      <div class="category">Religious</div>
+      <div class="category">Government</div>
     </div>
     <main>
-        <section >
-            <div class="title">Events</div>
-        </section>
-        <section >
-            <div class="title">Weather</div>
-        </section>
-        <section>
-            <div class="title">Spotlights</div>
-        </section>
+      <section>
+        <div class="title">Events</div>
+      </section>
+      <section>
+        <div class="title">Weather</div>
+      </section>
+      <section>
+        <div class="title">Spotlights</div>
+      </section>
     </main>
     <footer>
-        <div id="location"></div>
-        <div id="lastModified">Last Modification : </div>
-        <span>Contact chamber +2348062888162</span>
-        <p>
-            WDD 230
-            &COPY; Omotoso David <span class="year"></span>
-        </p>
-       
+      <div id="location"></div>
+      <div id="lastModified">Last Modification :</div>
+      <span>Contact chamber +2348062888162</span>
+      <p>WDD 230 &COPY; Omotoso David <span class="year"></span></p>
     </footer>
     <script>
-        document.getElementById('lastModified').textContent += document.lastModified;
-        const date = new Date();
-        document.querySelector('.year').innerHTML = date.getFullYear();
-        document.addEventListener('DOMContentLoaded', function () {
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('nav');
+      document.getElementById("lastModified").textContent +=
+        document.lastModified;
+      const date = new Date();
+      document.querySelector(".year").innerHTML = date.getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector("nav");
 
-            // Toggle the 'active' class on click of the hamburger icon
-            hamburger.addEventListener('click', function () {
-                nav.classList.toggle('active');
-            });
+        // Toggle the 'active' class on click of the hamburger icon
+        hamburger.addEventListener("click", function () {
+          nav.classList.toggle("active");
         });
-
+      });
     </script>
-</body>
-
+  </body>
 </html>
