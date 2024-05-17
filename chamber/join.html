@@ -8,6 +8,7 @@
     <title>Join the Chamber</title>
     <meta property="og:title" content="Akure chamber of commerce">
     <meta property="og:type" content="website" />
+    <meta name="description" content="Join Akure Chamber of commerce today" />
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://lightmanbro.github.io/wdd230/chamber/">
     <!--  Non-Essential, But Recommended -->
@@ -113,7 +114,7 @@
        
     </footer>
     <script>
-        document.getElementById('lastModified').textContent += document.lastModified;
+        document.getElementById('lastModified').textContent += `${document.lastModified}`;
         const date = new Date();
         document.querySelector('.year').innerHTML = date.getFullYear();
         document.addEventListener('DOMContentLoaded', function () {
@@ -128,5 +129,4 @@
 
     </script>
 </body>
-
 </html>
