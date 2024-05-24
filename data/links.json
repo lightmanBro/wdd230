@@ -1,4 +1,5 @@
-[
+{
+    "weeks":[
     {
       "week": 1,
       "links": [
@@ -10,14 +11,17 @@
     {
       "week": 2,
       "links": [
-        { "url": "./week02/design.html", "title": "Grid display exercise" },
-        { "url": "./week02/bom.html", "title": "BOM dom exercise" }
+        { "url": "./week02/design.html", "title": "Grid display excercise" },
+        { "url": "./week02/bom.html", "title": "BOM dom excercise" }
       ]
     },
     {
       "week": 3,
       "links": [
-        { "url": "./week03/images/pexels-pixabay-158316 (1).webp", "title": "Image" },
+        {
+          "url": "./week03/images/pexels-pixabay-158316 (1).webp",
+          "title": "Image"
+        },
         { "url": "./week03/bom/bom.html", "title": "Storage API" },
         { "url": "./week03/lazyload.html", "title": "Lazy load" },
         { "url": "./week03/responsive-images.html", "title": "Responsive img" }
@@ -26,8 +30,14 @@
     {
       "week": 4,
       "links": [
-        { "url": "https://codepen.io/blazzard-jason/pen/bGKLQMp", "title": "CodePen" },
-        { "url": "./week04/images/week4-wdd230.jpg", "title": "Combinator Img" },
+        {
+          "url": "https://codepen.io/blazzard-jason/pen/bGKLQMp",
+          "title": "CodePen"
+        },
+        {
+          "url": "./week04/images/week4-wdd230.jpg",
+          "title": "Combinator Img"
+        },
         { "url": "./week04/tablebuild.html", "title": "Table" },
         { "url": "form.html", "title": "Form" }
       ]
@@ -35,11 +45,14 @@
     {
       "week": 5,
       "links": [
-        { "url": "https://codepen.io/lightmanBro-the-styleful/pen/KKLzbdV", "title": "Psuedo" },
+        {
+          "url": "https://codepen.io/lightmanBro-the-styleful/pen/KKLzbdV",
+          "title": "Psuedo"
+        },
         { "url": "./week05/new-ward-member.json", "title": "JSON file" },
         { "url": "./week05/prophets.html", "title": "Prophets" },
         { "url": "./week05/weather.html", "title": "Weather" }
       ]
     }
   ]
-  
+}
