@@ -70,5 +70,5 @@ apiFetch();
 
 function displayResults(data) {
     let desc = data.weather[0].description;
-    currentTemp.innerHTML = `${data.main.temp}&deg;F - ${ desc.includes("sunshine") ? "🌞" : "☔"} ${desc}`;
+    currentTemp.innerHTML = `${ desc.includes("sunshine") ? "🌞" : "☔"} ${data.main.temp}&deg;F - ${desc}`;
 }
