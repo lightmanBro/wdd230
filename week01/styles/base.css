@@ -142,6 +142,13 @@ section{
 li a{
     font-size: .75rem;
 }
+figure{
+    margin:auto 5rem;
+}
+#current-temp{
+    font-size: 2rem;
+    text-align: center;
+}
 footer p{
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
