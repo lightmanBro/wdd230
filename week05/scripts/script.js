@@ -35,3 +35,4 @@ async function getProphetData() {
       cards.appendChild(card);
     }); // end of arrow function and forEach loop
   }
+  
