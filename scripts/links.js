@@ -1,10 +1,11 @@
-const baseURL = "https://yourgithubusername.github.io/wdd230/";
-const linksURL = "https://yourgithubusername.github.io/wdd230/data/links.json";
+const baseURL = "https://lightmanbro.github.io/wdd230/";
+const linksURL = "https://lightmanbro.github.io/wdd230/data/links.json";
 
 async function getLinks() {
     try {
       const response = await fetch(linksURL);
       const data = await response.json();
+      console.log(data);
       displayLinks(data);
     } catch (error) {
       console.error("Failed to fetch links:", error);
