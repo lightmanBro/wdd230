@@ -370,3 +370,49 @@ input[type="submit"]:hover {
         margin-left: 20px;
     }
 }
+
+
+/* DIRECTORY STYLES */
+/* Add styles for the grid and list views */
+#directory {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#directory.grid .member-card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#directory.list .member-card {
+    flex: 1 1 100%;
+    margin: 10px 0;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 10px 20px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.view-toggle button.active {
+    background: #007BFF;
+    color: #fff;
+}

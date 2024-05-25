@@ -1,4 +1,4 @@
-const baseURL = "https://lightmanbro.github.io/wdd230/";
+const baseURL = "https://lightmanbro.github.io/wdd230/chamber";
 const linksURL = `${baseURL}data/members.json`;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('member-card');
             card.innerHTML = `
                 <img src="${baseURL}images/${member.image}" alt="${member.name}">
-                <h2>${member.name}</h2>
+                <h2>${member.name}  <span>${member.membership}</span></h2>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">${member.website}</a>
@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     gridViewButton.addEventListener('click', () => {
-        document.querySelectorAll('.member-card').forEach(card=>card.classList.remove('flex'));
+        document.querySelectorAll('.member-card').forEach(card=>{card.classList.remove('flex')
+        card.querySelector('img').style.display="block"
+        });
         directory.classList.remove('list');
         directory.classList.add('grid');
         gridViewButton.classList.add('active');
@@ -42,8 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     listViewButton.addEventListener('click', () => {
-        console.log()
-        document.querySelectorAll('.member-card').forEach(card=>card.classList.add('flex'));
+        document.querySelectorAll('.member-card').forEach(card=>{card.classList.add('flex')
+        card.querySelector('img').style.display="none"
+        });
         directory.classList.remove('grid');
         directory.classList.add('list');
         listViewButton.classList.add('active');
