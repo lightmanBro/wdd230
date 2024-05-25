@@ -1,5 +1,5 @@
 const baseURL = "https://lightmanbro.github.io/wdd230/chamber";
-const linksURL = `${baseURL}data/members.json`;
+const linksURL = `${baseURL}/data/members.json`;
 
 document.addEventListener('DOMContentLoaded', () => {
     const directory = document.getElementById('directory');
@@ -23,13 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('member-card');
             card.innerHTML = `
-                <img src="${baseURL}images/${member.image}" alt="${member.name}">
-                <h2>${member.name}  <span>${member.membership}</span></h2>
+                <img src="${baseURL}/images/${member.image}" alt="${member.name}">
+                <br>
+                <span>${member.membership}</span>
+                <h2>${member.name} </h2>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">${member.website}</a>
             `;
             directory.appendChild(card);
+            console.log(member.image)
         });
     }
 
