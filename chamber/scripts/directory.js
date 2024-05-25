@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const baseURL = 'https://yourgithubusername.github.io/chamber/';
-    const membersURL = `${baseURL}data/members.json`;
+const baseURL = "https://lightmanbro.github.io/wdd230/";
+const linksURL = `${baseURL}data/members.json`;
 
+document.addEventListener('DOMContentLoaded', () => {
     const directory = document.getElementById('directory');
     const gridViewButton = document.getElementById('grid-view');
     const listViewButton = document.getElementById('list-view');
 
     async function fetchMembers() {
         try {
-            const response = await fetch(membersURL);
+            const response = await fetch(linksURL);
             if (!response.ok) throw new Error('Network response was not ok');
             const members = await response.json();
             displayMembers(members);
@@ -34,13 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     gridViewButton.addEventListener('click', () => {
+        document.querySelectorAll('.member-card').forEach(card=>card.classList.remove('flex'));
         directory.classList.remove('list');
         directory.classList.add('grid');
         gridViewButton.classList.add('active');
         listViewButton.classList.remove('active');
     });
-
+    
     listViewButton.addEventListener('click', () => {
+        console.log()
+        document.querySelectorAll('.member-card').forEach(card=>card.classList.add('flex'));
         directory.classList.remove('grid');
         directory.classList.add('list');
         listViewButton.classList.add('active');
