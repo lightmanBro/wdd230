@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/File:Akure_town.jpg">
     <title>Thank You</title>
-    <link rel="stylesheet" href="./styles/base.css" /> <!-- Link to your CSS file -->
+    <meta property="og:title" content="Akure chamber of commerce">
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Join Akure Chamber of commerce today" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://lightmanbro.github.io/wdd230/chamber/">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Omotoso David Course assignment portal">
+    <meta property="og:site_name" content="WDD 230.">
+    <meta name="author" content="Omotoso David .O" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
 </head>
+
 <body>
-    <div class="container thank-you">
-        <h1>Thank You!</h1>
-        <p>Thank you for filling out the membership application form. We will process your application and get back to you shortly.</p>
-        <a href="index.html" class="btn">Back to Homepage</a>
+    <header>
+        <div class="site-title">
+            <h1>Akure city Chamber of Commerce </h1>
+        </div>
+        <!-- Add hamburger icon here -->
+        <div class="hamburger">&#9776;</div>
+    </header>
+    <nav>
+        <div class="links">
+            <a href="">Membership</a>
+            <a href="">Business directories</a>
+            <a href="">Events</a>
+            <a href="">Community</a> 
+            <a href="">Business Advocacy</a>
+            <a href="">About the Chamber</a>
+        </div>
+    </nav>
+    <div class="hero">
+        
     </div>
+    <div class="category-container">
+        <div class="category">Textile</div>
+        <div class="category">Agriculture</div>
+        <div class="category">Finance</div>
+        <div class="category">Transportation</div>
+        <div class="category">Construction</div>
+        <div class="category">Information Technology</div>
+        <div class="category">Religious</div>
+        <div class="category">Government</div>
+    </div>
+        <div class="container">
+            <div class="container thank-you">
+                <h1>Thank You!</h1>
+                <p>Thank you for filling out the membership application form. We will process your application and get back to you shortly.</p>
+                <a href="index.html" class="btn">Back to Homepage</a>
+            </div>
+        </div>
+    <footer>
+        <div id="location"></div>
+        <div id="lastModified">Last Modification : </div>
+        <span>Contact chamber +2348062888162</span>
+        <p>
+            WDD 230
+            &COPY; Omotoso David <span class="year"></span>
+        </p>
+       
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent += `${document.lastModified}`;
+        const date = new Date();
+        document.querySelector('.year').innerHTML = date.getFullYear();
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+
+            // Toggle the 'active' class on click of the hamburger icon
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
+        });
+
+    </script>
 </body>
 </html>
