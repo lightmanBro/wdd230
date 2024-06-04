@@ -1,105 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:image"
-      content="https://en.wikipedia.org/wiki/File:Akure_town.jpg" />
-    <title>Akure Chamber of commerce</title>
-    <meta property="og:title" content="Akure chamber of commerce" />
-    <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="The Akure Chamber of Commerce acts as a regional economic catalyst, 
-    leadership convener and community champion. We promote business through member
-    services, economic and community development, and public policy that balances economic prosperity" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      property="og:url"
-      content="https://lightmanbro.github.io/wdd230/chamber/" />
-    <!--  Non-Essential, But Recommended -->
-    <meta
-      property="og:description"
-      content="WDD 230 - Web Frontend Development Omotoso David Course assignment portal" />
-    <meta property="og:site_name" content="WDD 230." />
-    <meta name="author" content="Omotoso David .O" />
-    <link rel="icon" href="favicon.ico" type="x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/larger.css" />
-  </head>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory - Akure Chamber of Commerce</title>
+    <meta name="description" content="The Akure Chamber of Commerce directory provides information about businesses and their services in Akure.">
+    <meta name="author" content="Omotoso David .O">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/File:Akure_town.jpg">
+    <meta property="og:url" content="https://lightmanbro.github.io/wdd230/chamber/">
+    <meta property="og:description" content="The Akure Chamber of Commerce directory provides information about businesses and their services in Akure.">
+    <meta property="og:site_name" content="WDD 230.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .banner {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 10px;
+            position: fixed;
+            top: 30%;
+            left: 10%;
+            right: auto;
+            width: 70%;
+            margin: auto;
+            display: block; /* Hidden by default */
+            z-index: 1000;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            font-size: 1.5rem;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="site-title">
-        <h1>Akure city Chamber of Commerce</h1>
-      </div>
-      <!-- Add hamburger icon here -->
-      <div class="hamburger">&#9776;</div>
+        <div class="site-title">
+            <h1>Akure City Chamber of Commerce</h1>
+        </div>
+        <!-- Add hamburger icon here -->
+        <div class="hamburger">&#9776;</div>
     </header>
     <nav>
-      <div class="links">
-        <a href="./join.html">Membership</a>
-        <a href="./directory.html">Business directories</a>
-        <a href="">Events</a>
-        <a href="">Community</a>
-        <a href="">Business Advocacy</a>
-        <a href="">About the Chamber</a>
-      </div>
+        <div class="links">
+            <a href="./join.html">Membership</a>
+            <a href="./directory.html">Business directories</a>
+            <a href="">Events</a>
+            <a href="">Community</a>
+            <a href="">Business Advocacy</a>
+            <a href="">About the Chamber</a>
+        </div>
     </nav>
     <div class="hero">
-      <div class="action">
-        <div class="action-title">New Here?</div>
-        <a href="./join.html">Join Community</a>
-      </div>
+        <div class="action">
+            <div class="action-title">New Here?</div>
+            <a href="./join.html">Join Community</a>
+        </div>
     </div>
     <div class="category-container">
-      <div class="category">Textile</div>
-      <div class="category">Agriculture</div>
-      <div class="category">Finance</div>
-      <div class="category">Transportation</div>
-      <div class="category">Construction</div>
-      <div class="category">Information Technology</div>
-      <div class="category">Religious</div>
-      <div class="category">Government</div>
+        <div class="category">Textile</div>
+        <div class="category">Agriculture</div>
+        <div class="category">Finance</div>
+        <div class="category">Transportation</div>
+        <div class="category">Construction</div>
+        <div class="category">Information Technology</div>
+        <div class="category">Religious</div>
+        <div class="category">Government</div>
     </div>
     <main>
-      <section>
-        <div class="title">Events</div>
-      </section>
-      <section>
-        <div class="title">Weather</div>
-      </section>
-      <section>
-        <div class="title">Spotlights</div>
-      </section>
+        <section class="events-section">
+            <div class="title">Events</div>
+            <div class="events">
+                <h3 class="events-title">Football Match Coming up this week</h3>
+                <picture>
+                    <source srcset="./images/pexels-pixabay-262524.jpg" media="(max-width: 400px)">
+                    <source srcset="./images/pexels-pixabay-262524.jpg" media="(max-width: 600px)">
+                    <img src="./images/pexels-pixabay-262524.jpg" alt="table setting" loading="lazy">
+                </picture>
+            </div>
+            <div class="events">
+                <h3 class="events-title">Arrow shooting Coming up this week</h3>
+                <picture>
+                    <source srcset="./images/pexels-kampus-small.jpg" media="(max-width: 400px)">
+                    <source srcset="./images/pexels-kampus-6540689.jpg" media="(max-width: 600px)">
+                    <img src="./images/pexels-kampus-6540689.jpg" alt="table setting" loading="lazy">
+                </picture>
+            </div>
+            <div class="events">
+                <h3 class="events-title">Adult Exercise Coming up this week</h3>
+                <picture>
+                    <source srcset="./images/pexels-marcus-aurelius-small.png" media="(max-width: 400px)">
+                    <source srcset="./images/pexels-marcus-aurelius-6787440.png" media="(max-width: 600px)">
+                    <img src="./images/pexels-marcus-aurelius-6787440.png" alt="table setting" loading="lazy">
+                </picture>
+            </div>
+        </section>
+        <section class="weather-section">
+            <div class="title">Weather</div>
+            <div id="weather">
+                <p>Current Temperature: <span id="current-temp"></span>°C</p>
+                <p>Current Weather: <span id="weather-desc"></span></p>
+                <div id="forecast"></div>
+            </div>
+        </section>
+        <section>
+            <div class="title" id="spotlight">Spotlights</div>
+        </section>
     </main>
     <footer>
-      <div id="location"></div>
-      <div id="lastModified">Last Modification :</div>
-      <span>Contact chamber +2348062888162</span>
-      <p>WDD 230 &COPY; Omotoso David <span class="year"></span></p>
+        <div id="location"></div>
+        <div id="lastModified">Last Modification:</div>
+        <span>Contact chamber +2348062888162</span>
+        <p>WDD 230 &COPY; Omotoso David <span class="year"></span></p>
     </footer>
+    <div id="meet-greet-banner" class="banner">
+        <p>☺☺ Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <button id="close-banner">Close</button>
+    </div>
     <script>
-      document.getElementById("lastModified").textContent +=
-        document.lastModified;
-      const date = new Date();
-      document.querySelector(".year").innerHTML = date.getFullYear();
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.querySelector(".hamburger");
-        const nav = document.querySelector("nav");
+        const baseURL = "https://lightmanbro.github.io/wdd230/chamber";
+        const linksURL = `${baseURL}/data/members.json`;
 
-        // Toggle the 'active' class on click of the hamburger icon
-        hamburger.addEventListener("click", function () {
-          nav.classList.toggle("active");
+        async function fetchMembers() {
+            try {
+                const response = await fetch(linksURL);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const members = await response.json();
+                displaySpotlights(members);
+            } catch (error) {
+                console.error('Failed to fetch members:', error);
+            }
+        }
+
+        function displaySpotlights(members) {
+            const eligibleMembers = members.filter(member => member.membership === 'Silver' || member.membership === 'Gold');
+            const randomMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+            const spotlightContainer = document.getElementById('spotlight');
+
+            spotlightContainer.innerHTML = ''; // Clear existing content
+            randomMembers.forEach(member => {
+                spotlightContainer.innerHTML += `
+                    <div class="member-spotlight">
+                        <h2>${member.name}</h2>
+                        <img src="${baseURL}/images/${member.image}" alt="${member.name}" loading="lazy">
+                        <p>${member.address}</p>
+                        <p>${member.phone}</p>
+                        <a href="${member.website}" target="_blank">${member.website}</a>
+                    </div>
+                `;
+            });
+        }
+
+        fetchMembers();
+
+        const apiKey = '38468ba944f232ca60c55c5b55943ed4';
+        const city = 'Akure';
+        const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+        const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+
+        async function fetchWeatherData() {
+            try {
+                const weatherResponse = await fetch(weatherURL);
+                const forecastResponse = await fetch(forecastURL);
+
+                if (weatherResponse.ok && forecastResponse.ok) {
+                    const weatherData = await weatherResponse.json();
+                    const forecastData = await forecastResponse.json();
+                    displayWeatherData(weatherData);
+                    displayForecastData(forecastData);
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            } catch (error) {
+                console.error('Failed to fetch weather data:', error);
+            }
+        }
+
+        function displayWeatherData(data) {
+            document.getElementById('current-temp').textContent = data.main.temp.toFixed(1);
+            document.getElementById('weather-desc').textContent = data.weather[0].description;
+        }
+
+        function displayForecastData(data) {
+            const forecastElement = document.getElementById('forecast');
+            forecastElement.innerHTML = '<h3>3-Day Forecast</h3>';
+
+            const forecastItems = data.list.filter((item, index) => index % 8 === 0).slice(0, 3); // Every 8th item (24 hours interval)
+
+            forecastItems.forEach(item => {
+                const date = new Date(item.dt_txt);
+                forecastElement.innerHTML += `
+                    <div>
+                        <p>${date.toDateString()}</p>
+                        <p>Temp: ${item.main.temp.toFixed(1)}°C</p>
+                    </div>
+                `;
+            });
+        }
+
+        fetchWeatherData();
+
+        function showBanner() {
+            const banner = document.getElementById('meet-greet-banner');
+            const today = new Date().getDay(); // 0 (Sunday) to 6 (Saturday)
+
+            if (today === 1 || today === 2 || today === 3) {
+                banner.style.display = 'block';
+            }
+
+            document.getElementById('close-banner').addEventListener('click', () => {
+                banner.style.display = 'none';
+            });
+        }
+
+        showBanner();
+
+        document.getElementById("lastModified").textContent += document.lastModified;
+        const date = new Date();
+        document.querySelector(".year").innerHTML = date.getFullYear();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const nav = document.querySelector("nav");
+
+            // Toggle the 'active' class on click of the hamburger icon
+            hamburger.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
         });
-      });
     </script>
-  </body>
+</body>
 </html>

@@ -5,7 +5,10 @@
         grid-template-columns: 1fr;
         padding: .25rem;
     }
-
+    .banner{
+        width: 70vw;
+        text-wrap: wrap;
+    }
     .action {
         position: relative;
         width: 100%;
